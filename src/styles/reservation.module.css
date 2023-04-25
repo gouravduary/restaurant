@@ -1,0 +1,148 @@
+.reservation {
+    background: url('../imgs/reservation.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.form {
+    margin: 30px auto;
+    width: 70%;
+    padding: 20px;
+    color: aliceblue;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.form>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form>h1 {
+    grid-row: 1;
+    grid-column: 1 /-1;
+}
+
+.form .name {
+    grid-column: 1/ 4;
+    grid-row: 2;
+}
+
+.form .contact {
+    grid-column: 4/-1;
+    grid-row: 2;
+}
+
+.form .date {
+    grid-column: 1/ 3;
+    grid-row: 3;
+}
+
+.form .time {
+    grid-column: 3/ 5;
+    grid-row: 3;
+}
+
+.form .people {
+    grid-column: 5/ -1;
+    grid-row: 3;
+}
+
+.form .req {
+    grid-column: 1/ 4;
+    grid-row: 4;
+}
+
+.form .reqText {
+    grid-column: 4/ -1;
+    grid-row: 4;
+}
+
+.form .tnc {
+    grid-column: 1/ -1;
+    grid-row: 5;
+}
+
+.form .subscribe {
+    grid-column: 1/ -1;
+    grid-row: 6;
+}
+
+.form .btn {
+    grid-column: 1/ 3;
+    grid-row: 7;
+    background: tomato;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.form input[type='text'],
+.form input[type='number'],
+.form input[type='time'],
+.form textarea,
+.form select,
+.form .btn {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.form textarea {
+    padding: 10px;
+}
+
+.form .tnc span {
+    color: rgb(247, 97, 43);
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: not-allowed;
+}
+
+.form .time .notice {
+    color: rgb(227, 238, 70);
+    font-weight: 500;
+}
+
+.form .time label {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:600px) {
+    .reservation {
+        height: initial;
+    }
+
+    .form {
+        width: 90%;
+        margin: 10px auto 0;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form input {
+        width: 100%;
+    }
+
+    .form input[type='checkbox'] {
+        width: initial;
+    }
+
+    .form .btn {
+        justify-content: center;
+    }
+
+    .form label {
+        margin: 3px 0;
+    }
+}

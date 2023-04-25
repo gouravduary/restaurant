@@ -1,0 +1,47 @@
+.footer{
+    background: orangered;
+    color: aliceblue;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.footerIcon{
+    margin-bottom: -2.5px;
+}
+
+.location{
+    position: relative;
+}
+
+.location a{
+    display: block;
+    padding: 0 3px;
+    color: aliceblue;
+    background: #000;
+    font-size: 0.7rem;
+    border-radius: 3px;
+    position: absolute;
+    right: -30px;
+    top: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .footer{
+        flex-direction: column;
+        position: inherit;
+    }
+    .location, .email, .contact{
+        margin: 10px 0;
+    }
+    .location a{
+        display: none;
+    }
+}
